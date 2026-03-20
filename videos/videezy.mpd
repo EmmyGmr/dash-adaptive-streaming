@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="urn:mpeg:dash:schema:mpd:2011"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd"
+	profiles="urn:mpeg:dash:profile:isoff-live:2011"
+	type="static"
+	mediaPresentationDuration="PT31.0S"
+	maxSegmentDuration="PT5.0S"
+	minBufferTime="PT11.8S">
+	<ProgramInformation>
+	</ProgramInformation>
+	<ServiceDescription id="0">
+	</ServiceDescription>
+	<Period id="0" start="PT0.0S">
+		<AdaptationSet id="0" contentType="video" startWithSAP="1" segmentAlignment="true" bitstreamSwitching="true" frameRate="24/1" maxWidth="1920" maxHeight="1080" par="16:9" lang="eng">
+			<Representation id="0" mimeType="video/mp4" codecs="avc1.640028" bandwidth="1500000" width="1920" height="1080" sar="1:1">
+				<SegmentTemplate timescale="12288" initialization="init_videezy_$RepresentationID$.m4s" media="chunk_videezy_$RepresentationID$_$Number$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="65536" />
+						<S d="74752" />
+						<S d="80896" />
+						<S d="62464" />
+						<S d="72704" />
+						<S d="24576" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="1" contentType="video" startWithSAP="1" segmentAlignment="true" bitstreamSwitching="true" frameRate="24/1" maxWidth="1920" maxHeight="1080" par="16:9" lang="eng">
+			<Representation id="1" mimeType="video/mp4" codecs="avc1.640028" bandwidth="2000000" width="1920" height="1080" sar="1:1">
+				<SegmentTemplate timescale="12288" initialization="init_videezy_$RepresentationID$.m4s" media="chunk_videezy_$RepresentationID$_$Number$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="65536" />
+						<S d="74752" />
+						<S d="80896" />
+						<S d="62464" />
+						<S d="72704" />
+						<S d="24576" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="2" contentType="video" startWithSAP="1" segmentAlignment="true" bitstreamSwitching="true" frameRate="24/1" maxWidth="1920" maxHeight="1080" par="16:9" lang="eng">
+			<Representation id="2" mimeType="video/mp4" codecs="avc1.640028" bandwidth="4000000" width="1920" height="1080" sar="1:1">
+				<SegmentTemplate timescale="12288" initialization="init_videezy_$RepresentationID$.m4s" media="chunk_videezy_$RepresentationID$_$Number$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="65536" />
+						<S d="74752" />
+						<S d="106496" />
+						<S d="92672" />
+						<S d="41472" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+	</Period>
+</MPD>
